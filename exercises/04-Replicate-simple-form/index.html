@@ -1,16 +1,112 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Simple Form</title>
+		<style>
+			* {
+				/* outline: 1px dashed red; */
+			}
+			body {
+				background: black;
+				margin: 150px;
+			}
+			form {
+				margin: auto;
+			}
+			table,
+			th,
+			td {
+				border: 1px solid black;
+				border-style: ridge;
+			}
+			table {
+				background: white;
+			}
+			thead {
+				background: #ccccff;
+			}
+			p {
+				margin: 0%;
+			}
+			.container {
+				margin: auto;
+			}
+			.submit {
+				text-align: center;
+			}
+			.text p {
+				text-align: center;
+			}
+			.text textarea {
+				width: 99%;
+				height: 70px;
+			}
+			.inset {
+				border-style: inset;
+			}
+		</style>
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>4Geeks Academy</title>
-</head>
-
-<body>
-    <form>
-        <!-- your code here -->
-    </form>
-</body>
-
+	<body>
+		<div class="container">
+			<form>
+				<!-- your code here -->
+				<table>
+					<thead>
+						<tr>
+							<th>
+								<strong>Name</strong>
+							</th>
+							<th>
+								<strong>Value</strong>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Name:</td>
+							<td><input class="inset" type="text" placeholder="Enter Name" /></td>
+						</tr>
+						<tr>
+							<td>Sex:</td>
+							<td>
+								<p><input type="radio" name="sex" value="red" /> Male</p>
+								<p><input type="radio" name="sex" value="red" /> Female</p>
+							</td>
+						</tr>
+						<tr>
+							<td>Eye Color:</td>
+							<td>
+								<select class="inset" name="eyecolor" />
+								<option value="Blue">Blue</option>
+								<option value="Green">Green</option>
+								<option value="Brown">Brown</option>
+								<select />
+							</td>
+						</tr>
+						<tr>
+							<td>Check all that apply:</td>
+							<td>
+								<p><input class="inset" type="checkbox" /> Over 6 feet tall</p>
+								<p><input class="inset" type="checkbox" /> Over 200 pounds</p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="text">
+								<p>Describe your athletic ability:</p>
+								<textarea class="inset"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="submit">
+								<input type="submit" value="Enter My Infomation" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+	</body>
 </html>
